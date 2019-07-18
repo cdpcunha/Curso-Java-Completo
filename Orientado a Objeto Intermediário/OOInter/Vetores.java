@@ -19,7 +19,6 @@ public class Vetores {
 		}
 	double media = mediaSom / count;
 	System.out.printf("\nMédia dos tamanhos: %.2f",media);
-	
 	sc.close();
 	}
 
