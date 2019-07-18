@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Orientado a Objeto Intermediário"/>
+	<classpathentry kind="src" path="Composição"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
