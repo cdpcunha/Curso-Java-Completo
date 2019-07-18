@@ -31,7 +31,7 @@ public class PedidoEx {
 	
 	public void imprimeItens(){
 		for(ItemPedido x: itens) {
-			System.out.printf(x.toString() + " Sub Total do Produto : %.2f",x.subTotal());
+			System.out.printf(x.toString() + " Sub Total do Produto : %.2f\n",x.subTotal());
 		}
 	}
 
