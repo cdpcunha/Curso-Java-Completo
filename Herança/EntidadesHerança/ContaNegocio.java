@@ -1,6 +1,6 @@
 package EntidadesHerança;
 
-public class ContaNegocio extends Conta {
+public final class ContaNegocio extends Conta {
 	private double limiteEmprestimo;
 
 	public ContaNegocio() {
@@ -13,7 +13,7 @@ public class ContaNegocio extends Conta {
 
 	
 	public String toString() {
-		return "ContaNegocio [limiteEmprestimo=" + limiteEmprestimo + ", saldo=" + saldo + "]";
+		return "ContaNegocio [limiteEmprestimo=" + limiteEmprestimo + "]" + super.toString();
 	}
 
 	public double getLimiteEmprestimo() {
@@ -24,5 +24,11 @@ public class ContaNegocio extends Conta {
 		this.limiteEmprestimo = limiteEmprestimo;
 	}
 	
+	
+	@Override //sobreposição do metodo saque de Conta
+	public void saque (double quantia) {
+		super.saque(quantia);
+		this.saldo -= 10;
+	}	
 	
 }

@@ -19,10 +19,11 @@ public class Herança {
 	
 	//DOWNCASTING
 	ContaNegocio contaN2 = (ContaNegocio)conta2;
-	
+	ContaNegocio contaN3;
 	if(contaP1 instanceof ContaPoupança) {
-		ContaNegocio contaN3 = (ContaNegocio)contaN1;
+		contaN3 = (ContaNegocio)contaN1;
 	}
+	else contaN3 = new ContaNegocio();
 	
 	System.out.println(conta1);
 	System.out.println(conta2);
@@ -30,6 +31,13 @@ public class Herança {
 	System.out.println(conta4);
 	System.out.println(contaN1);
 	System.out.println(contaN2);
+	System.out.println(contaN3);
 	System.out.println(contaP1);
+	
+	contaP1.saque(200);
+	contaN3.saque(200);
+	System.out.println("------------------------------------");
+	System.out.println(contaP1);
+	System.out.println(contaN3);
 	}
 }

@@ -1,6 +1,6 @@
 package EntidadesHerança;
 
-public class ContaPoupança extends Conta {
+public final class ContaPoupança extends Conta {
 	private Double taxaJuro;
 
 	public ContaPoupança(Integer id, String usuario, double saldo, double taxaJuro) {
@@ -9,7 +9,7 @@ public class ContaPoupança extends Conta {
 	}
 	
 	public String toString() {
-		return "ContaPoupança [taxaJuro=" + taxaJuro + ", saldo=" + saldo + "]";
+		return "ContaPoupança [TaxaJuro=" + taxaJuro + "]" + super.toString();
 	}
 
 
@@ -29,4 +29,9 @@ public class ContaPoupança extends Conta {
 		this.taxaJuro = taxaJuro;
 	}
 	
+	@Override //sobreposição do metodo saque de Conta
+	public void saque (double quantia) {
+		this.saldo -= quantia + 5;
+	}
+
 }
