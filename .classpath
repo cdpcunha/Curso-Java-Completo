@@ -11,6 +11,5 @@
 	<classpathentry kind="src" path="Herança"/>
 	<classpathentry kind="src" path="Polimorfismo"/>
 	<classpathentry kind="src" path="Abstract"/>
-	<classpathentry kind="src" path="Exceptions"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
