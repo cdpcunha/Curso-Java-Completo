@@ -7,7 +7,7 @@ import EntidadesHerança.ContaPoupança;
 public class Herança {
 
 	public static void main(String[] args) {
-	Conta conta1 = new Conta(11, "James", 500);
+	//Conta conta1 = new Conta(11, "James", 500); Não pode ser instanciada por ser abstract
 	ContaNegocio contaN1 = new ContaNegocio(21, "Juca", 1200, 200);
 	ContaPoupança contaP1 = new ContaPoupança(31, "Paulinho", 30000, 1);
 	
@@ -25,7 +25,6 @@ public class Herança {
 	}
 	else contaN3 = new ContaNegocio();
 	
-	System.out.println(conta1);
 	System.out.println(conta2);
 	System.out.println(conta3);
 	System.out.println(conta4);

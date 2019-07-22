@@ -1,6 +1,6 @@
 package EntidadesHerança;
 
-public class Conta {
+public abstract class Conta {
 	private Integer id;
 	private String usuario;
 	protected double saldo;
