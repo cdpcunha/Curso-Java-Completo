@@ -17,7 +17,7 @@ public class Abstração {
 	double totalImpostos = 0;
 	int count = 0;
 	
-	System.out.println("Quantidade de registros ?");
+	System.out.println("Quantidade de registros de entrada?");
 	try {
 	count = sc.nextInt();
 	}
